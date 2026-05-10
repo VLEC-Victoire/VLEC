@@ -16,10 +16,10 @@ html{scroll-behavior:smooth;}
 body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--black);font-weight:300;overflow-x:hidden;}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0.8rem 4rem;background:rgba(250,244,238,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(196,98,45,0.1);}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0.2rem 4rem;background:rgba(250,244,238,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(196,98,45,0.1);}
 .nav-logo{display:flex;align-items:center;gap:0.6rem;text-decoration:none;}
-.nav-logo-circle{height:48px;width:auto;object-fit:contain;}
-.nav-logo-wordmark{height:36px;width:auto;object-fit:contain;}
+.nav-logo-circle{height:120px;width:auto;object-fit:contain;}
+.nav-logo-wordmark{height:96px;width:auto;object-fit:contain;}
 .nav-links{display:flex;gap:2rem;align-items:center;}
 .nav-links a{text-decoration:none;color:var(--gray);font-size:0.76rem;font-weight:400;letter-spacing:0.13em;text-transform:uppercase;transition:color .2s;}
 .nav-links a:hover{color:var(--copper);}
@@ -159,8 +159,8 @@ footer{background:var(--cream-dark);border-top:1px solid rgba(196,98,45,0.15);co
 footer a{color:var(--gray);text-decoration:none;transition:color .2s;}
 footer a:hover{color:var(--copper);}
 .footer-brand{display:flex;align-items:center;gap:.7rem;}
-.footer-brand-circle{height:40px;width:auto;object-fit:contain;}
-.footer-brand-wordmark{height:28px;width:auto;object-fit:contain;}
+.footer-brand-circle{height:140px;width:auto;object-fit:contain;}
+.footer-brand-wordmark{height:96px;width:auto;object-fit:contain;}
 .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
 .footer-contact{text-align:right;line-height:2;}
 
@@ -288,7 +288,7 @@ footer a:hover{color:var(--copper);}
     <div class="service-card">
       <div class="service-num">02</div>
       <div class="service-title" data-fr="Optimisation fiscale" data-en="Tax Optimisation">Optimisation fiscale</div>
-      <p class="service-desc" data-fr="Double qualification DEC & ACCA : nous optimisons votre fiscalité en France, au Royaume-Uni et au Portugal, en totale conformité." data-en="Dual DEC & ACCA qualification: we optimise your tax position across France, the UK and Portugal, in full compliance.">Double qualification DEC & ACCA : nous optimisons votre fiscalité en France, au Royaume-Uni et au Portugal, en totale conformité.</p>
+      <p class="service-desc" data-fr="Double qualification DEC & ACCA : Selon votre situation, nous mettons en place une stratégie fiscale adaptée — structure juridique, résidence, revenus — pour avancer sereinement et en totale conformité." data-en="Dual DEC & ACCA qualification: Depending on your situation, we put in place a tailored tax strategy — legal structure, residency, income — so you can move forward with confidence and in full compliance.">Double qualification DEC & ACCA : Selon votre situation, nous mettons en place une stratégie fiscale adaptée — structure juridique, résidence, revenus — pour avancer sereinement et en totale conformité.</p>
       <a href="#contact" class="service-link" data-fr="En savoir plus" data-en="Learn more">En savoir plus</a>
     </div>
     <div class="service-card">
@@ -437,11 +437,11 @@ footer a:hover{color:var(--copper);}
         <div class="form-row">
           <div class="form-group">
             <label data-fr="Prénom" data-en="First name">Prénom</label>
-            <input type="text" id="fname" placeholder="Victoire">
+            <input type="text" id="fname" placeholder="Prénom">
           </div>
           <div class="form-group">
             <label data-fr="Nom" data-en="Last name">Nom</label>
-            <input type="text" id="lname" placeholder="Leblanc">
+            <input type="text" id="lname" placeholder="Nom">
           </div>
         </div>
         <div class="form-group">
