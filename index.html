@@ -563,12 +563,20 @@ async function submitForm(){
   btn.textContent=currentLang==='fr'?'Envoi en cours...':'Sending...';
   btn.disabled=true;
   try{
-    const res=await fetch('https://formspree.io/f/xpqnzjej',{
+    const res=await fetch('https://api.web3forms.com/submit',{
       method:'POST',
       headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({prenom:fname,nom:lname,email:email,societe:company,sujet:subject,message:message})
+      body:JSON.stringify({
+        access_key:'18620c30-36de-4a93-9ff3-d4dde5d1cbca',
+        subject:'Nouveau message VLEC - '+( subject||'Contact'),
+        from_name:fname+' '+lname,
+        email:email,
+        societe:company,
+        message:message
+      })
     });
-    if(res.ok){
+    const data=await res.json();
+    if(data.success){
       document.getElementById('contactForm').style.display='none';
       document.getElementById('successMsg').style.display='block';
     }else{
